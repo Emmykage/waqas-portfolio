@@ -161,7 +161,7 @@ function loadLocalData() {
   const d = localStorage.getItem('my_values');
   const data = JSON.parse(d);
   const [name, email, message] = data;
-  document.getElementById('name').value = name;
+  document.getElementById('name') = name;
   document.getElementById('email').value = email;
   document.getElementById('message').value = message;
 }
